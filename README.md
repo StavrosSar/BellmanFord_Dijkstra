@@ -1,7 +1,3 @@
-Path planning algorithms
-Bellman Ford and Dijkstra
-Here is a possible README format for your GitHub repository:
-
 **Bellman-Ford Algorithm Implementation in Python**
 
 **Overview**
@@ -32,3 +28,43 @@ example_graph = [
 ```
 Choose a source node (default is 0) and run the script to see the results.
 
+------------------------------------------------------------------------------------------
+**Dijkstra's Algorithm Implementation**
+
+**Overview**
+---------
+
+This implementation of Dijkstra's algorithm is a Python class that calculates the shortest distances from a source vertex to all other vertices in a weighted graph.
+
+**Usage**
+---------
+
+### Class `Dijkstra`
+
+* `__init__(graph)`: Initializes the `Dijkstra` object with a weighted graph represented as an adjacency matrix.
+* `dijkstra(src)`: Calculates the shortest distances from the source vertex `src` to all other vertices in the graph.
+
+### Example Usage
+-------------
+
+To use this implementation, create an instance of the `Dijkstra` class and pass in the graph matrix as an argument. Then, call the `dijkstra` method with the source vertex as an argument.
+
+```python
+graph_matrix = [[0, 3, 0, 4, 0],
+                [3, 0, 1, 0, 0],
+                [0, 1, 0, 7, 2],
+                [4, 0, 7, 0, 5],
+                [0, 0, 2, 5, 0]]
+
+dijkstra_obj = Dijkstra(graph_matrix)
+shortest_distances = dijkstra_obj.dijkstra(0)
+
+print("Shortest distances from source vertex {}: {}".format(0, shortest_distances))
+```
+
+### Output
+--------
+The output will be a list of shortest distances from the source vertex to all other vertices in the graph. If a vertex is unreachable from the source vertex, the distance will be represented as `inf`.
+
+
+I hope this helps! Let me know if you have any questions or need further clarification.
