@@ -16,21 +16,6 @@ This repository contains a Python implementation of the Bellman-Ford algorithm, 
 * Can handle negative weight cycles
 * Visualizes the graph using NetworkX and Matplotlib
 
-**Usage**
---------
-
-### Running the Algorithm
-
-1. Clone the repository and install the required packages (NetworkX and Matplotlib) using `pip install networkx matplotlib`
-2. Run the script using `python bellman_ford.py`
-3. Choose a source node (default is 0)
-4. The algorithm will print the shortest distances, predecessors, and iteration stopped
-
-### Visualizing the Graph
-
-1. Run the script using `python bellman_ford.py`
-2. The algorithm will visualize the graph using NetworkX and Matplotlib
-
 **Example Graph**
 ----------------
 
